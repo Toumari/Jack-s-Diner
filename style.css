@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+ 
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 40px;
+    background-image: url(../images/burger3.jpg);
+}
+
+h2 {
+    margin: 0;
+}
+
+.title-text {
+    font-size:40px;
+}
+
+
+.container {
+    width: 600px;
+    margin: auto;
+    padding-bottom: 30px;
+    
+}
+
+/* Menu Section */
+
+.menu-section {
+    padding-top: 60px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border-bottom: 1px solid rgb(106, 103, 103);
+}
+
+.menu-item-desc {
+    margin-top: 5px ;
+    font-weight: 600;
+}
+
+.menu-item-title {
+    margin-bottom: 0;
+}
+
+.menu-item-img {
+    width: 100px;
+    height: 100px;
+    padding-right: 50px;
+}
+
+.payment-btn {
+    padding: 15px 30px;
+    background-color: limegreen;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: red
+}
+
+
+
+#payment-btn:hover {
+    background-color: #fff;
+    color: limegreen;
+    border: 2px solid limegreen;
+}
+
+#remove-btn {
+    padding: 15px 30px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+#remove-btn:hover {
+    background-color: #fff;
+    color: red;
+    border: 1px solid red;
+}
+
+.add-to-cart {
+    margin-left: auto;
+    margin-right: 0;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    color: limegreen;
+}
+
+/* Order Section */
+
+.order-heading {
+    text-align: center;
+    font-weight: 900;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.order-title { 
+
+}
+
+.order-price {
+    padding-left: 40px;
+    font-size: 20px;
+}
+
+.summary-text { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 900;
+}
+
+.order-item {
+    display: flex;
+}
+
+.form-label {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.payment-modal {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(174, 174, 174);
+    width: 500px;
+    height: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.payment-modal h1 {
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    color: whitesmoke;
+}
+
+#payment-form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: 900;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.hide {
+    display: none;
+}

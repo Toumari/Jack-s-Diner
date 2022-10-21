@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Jack's Diner</title>
+  </head>
+  <body>
+    <header class="hero-section">
+      <h1 class="title-text">Jack's Diner</h1>
+      <h3>The best burgers and pizza in town.</h3>
+    </header>
+
+    <div class="container">
+      <section class="menu-section" id="menu-section"></section>
+    </div>
+
+    <div class="container">
+        <h1 class="order-heading">Your Order</h1>
+      <section class="order-summary" id="order-summary">
+          
+        </div>
+      </section>
+    </div>
+
+    <section class="total-price">
+      <div class="container">
+        <hr />
+        <div class="summary-text">
+          <h1 class="total-price-heading">Total Price</h1>
+          <h2 class="total-price-amount" id="total-price-amount">£0.00</h2>
+        </div>
+        <a id="payment-btn" class="payment-btn">Checkout</a>
+      </div>
+    </section>
+
+    <div class="container payment-modal hide" id="payment-modal">
+      <i class="fa fa-times close-btn"></i>
+      <h1>Complete Payment Now</h1>
+      <h3 id="payment-amount"></h3>
+      <form id="payment-form">
+        <label class="form-label" for="Credit Card Number">Credit Card Number</label>
+        <input type="text" name="cc-number" id="cc-number">
+        <label class="form-label" for="Expiry Date">Expiry Date</label>
+        <input type="text" name="expiry-date" id="expiry-date">
+        <label class="form-label" for="CVC">CVC</label>
+        <input type="text" name="cvc" id="cvc">
+        <label class="form-label" for="Name on Card">Name on Card</label>
+        <input type="text" name="name-on-card" id="name-on-card">
+        <a class="payment-btn" id="checkout-btn">Make Payment</a>
+      </form>
+    </div>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
